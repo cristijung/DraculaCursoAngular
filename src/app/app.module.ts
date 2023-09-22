@@ -17,6 +17,7 @@ import { GaleriaComponent } from './pages/galeria/galeria.component';
 import { AssistirComponent } from './pages/assistir/assistir.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
     GaleriaComponent,
     AssistirComponent,
     ContatoComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    HttpClientModule
 
   ],
   imports: [

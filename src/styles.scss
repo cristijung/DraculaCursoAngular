@@ -8,6 +8,9 @@
   --texto-principal: #fff;
   --titulo-header: #FFF5EE;
   --stitulo-header: #d3989d;
+  --color-border: #130101;
+  --corpo-conteudo: #fae2e4;
+  --texto-conteudo: #2c0202;
 }
 
 html, body { height: 100%; }
@@ -18,7 +21,7 @@ body {
   background-color: var(--fundo-body);
 }
 
-.container {
+.containeer {
   max-width: 95%;
   margin: auto;
   background-color: var(--fundo-content);
@@ -27,3 +30,15 @@ body {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.conteudo {
+  max-width: 96%;
+  height: 100vh;
+  margin: auto;
+  padding: 1%;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: var(--corpo-conteudo);
+  color: var(--texto-conteudo);
+  box-shadow: 2px 2px 2px 2px rgba(10, 0, 0, 0.2);
+}

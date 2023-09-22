@@ -1,1 +1,19 @@
-<p>assistir works!</p>
+<section class="conteudo">
+  <h2>Pesquise aqui seu filme favorito</h2>
+  <div>
+    <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="searchTerm">Pesquisar por título do filme:</label>
+        <input
+          type="text"
+          id="searchTerm"
+          class="form-control"
+          formControlName="searchTerm"
+          placeholder="Digite o título do filme"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Pesquisar</button>
+    </form>
+
+  </div>
+</section>
