@@ -18,6 +18,8 @@ import { AssistirComponent } from './pages/assistir/assistir.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,7 @@ import { HttpClientModule } from '@angular/common/http';
     AssistirComponent,
     ContatoComponent,
     NotfoundComponent,
-    HttpClientModule
+
 
   ],
   imports: [
@@ -41,7 +43,10 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

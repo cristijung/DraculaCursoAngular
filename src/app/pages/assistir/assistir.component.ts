@@ -8,29 +8,26 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./assistir.component.scss']
 })
 export class AssistirComponent implements OnInit {
-  searchForm!: FormGroup; //verificar
-  movies!: any[];  //verificar
+  searchForm!: FormGroup;
+  movies!: any[]; // Para armazenar os resultados da pesquisa
 
-  constructor(
-    private formBuilder: FormBuilder,
-    private http: HttpClient) {}
+  constructor(private formBuilder: FormBuilder, private http: HttpClient) {}
 
-    ngOnInit(): void {
-        this.searchForm = this.formBuilder.group({
-          searchTerm: [''],
-        });
-    }
-
-    onSubmit() {
-      const searchTerm = this.searchForm.value.searchTerm;
-      if (searchTerm) {
-        const apiUrl = `https://www.omdbapi.com/?s=${searchTerm}`;
-
-        this.http.get(apiUrl).subscribe((data: any) => {
-          this.movies = data.Search; // Armazene os resultados da pesquisa
-        });
-      }
-    }
+  ngOnInit(): void {
+    this.searchForm = this.formBuilder.group({
+      searchTerm: [''], // Inicialize com um valor vazio
+    });
   }
 
+  onSubmit() {
+    const searchTerm = this.searchForm.value.searchTerm;
+    if (searchTerm) {
+      const apiKey = '3dacd77a8ba219ced04ee470310b7151'; // Chave de API do TMDb
+      const apiUrl = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchTerm}`;
+
+      this.http.get(apiUrl).subscribe((data: any) => {
+        this.movies = data.results; // Armazene os resultados da pesquisa
+      });
+    }
+  }
 }

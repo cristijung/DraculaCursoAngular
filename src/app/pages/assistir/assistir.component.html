@@ -15,5 +15,17 @@
       <button type="submit" class="btn btn-primary">Pesquisar</button>
     </form>
 
+    <div *ngIf="movies && movies.length > 0">
+      <h2>Resultados da pesquisa:</h2>
+      <ul>
+        <li *ngFor="let movie of movies">
+          {{ movie.title }} ({{ movie.release_date | date: 'medium' }})
+        </li>
+      </ul>
+    </div>
+
+    <div class="no-results" *ngIf="movies && movies.length === 0">
+      <p>Nenhum filme encontrado para a pesquisa.</p>
+    </div>
   </div>
 </section>
