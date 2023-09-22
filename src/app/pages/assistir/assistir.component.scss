@@ -1,0 +1,26 @@
+.formulario {
+  width: 50%;
+  margin: auto;
+}
+
+.barra {
+  scrollbar-width: thin;
+  scrollbar-color: var(--barra-rolar) transparent;
+  height: 280px;
+  overflow: scroll;
+
+  margin-right: 16px;
+}
+
+div::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: var(--barra-rolar); /* Cor do tipo ... hover */
+  border-radius: 4px;
+}
+
+div:hover::-webkit-scrollbar-thumb {
+  background-color: var(--barra-rolar-claro); /* Cor quando está ativa */
+}

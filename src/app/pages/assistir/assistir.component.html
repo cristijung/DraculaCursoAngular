@@ -1,27 +1,45 @@
 <section class="conteudo">
   <h2>Pesquise aqui seu filme favorito</h2>
   <div>
+    Se você se inspirou com esta história e a versão de Francis Ford Coppola,
+    pesquise sobre mais versões de Drácula, ou mesmo de outros filmes.
+  </div>
+  <h3>Search Movie</h3>
+
+  <div class="formulario">
     <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
-        <label for="searchTerm">Pesquisar por título do filme:</label>
+        <label for="searchTerm" style="margin-bottom: 2%"
+          >Pesquisar por título do filme:</label
+        >
         <input
           type="text"
           id="searchTerm"
           class="form-control"
           formControlName="searchTerm"
           placeholder="Digite o título do filme"
+          class="form-control"
+          style="margin-bottom: 2%"
         />
       </div>
-      <button type="submit" class="btn btn-primary">Pesquisar</button>
+      <button type="submit" class="btn btn-danger" style="margin-right: 5px">
+        Pesquisar
+      </button>
+      <button type="submit" class="btn btn-danger" (click)="clearSearch()">
+        Limpar pesquisa
+      </button>
     </form>
 
     <div *ngIf="movies && movies.length > 0">
-      <h2>Resultados da pesquisa:</h2>
-      <ul>
-        <li *ngFor="let movie of movies">
-          {{ movie.title }} ({{ movie.release_date | date: 'medium' }})
-        </li>
-      </ul>
+      <hr />
+      <div class="barra">
+        <h2>Resultados da pesquisa:</h2>
+        <ul>
+          <li *ngFor="let movie of movies">
+            {{ movie.title }} ({{ movie.release_date | date : "medium" }})
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="no-results" *ngIf="movies && movies.length === 0">

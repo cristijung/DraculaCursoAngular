@@ -22,12 +22,17 @@ export class AssistirComponent implements OnInit {
   onSubmit() {
     const searchTerm = this.searchForm.value.searchTerm;
     if (searchTerm) {
-      const apiKey = '3dacd77a8ba219ced04ee470310b7151'; // Chave de API do TMDb
+      const apiKey = '3dacd77a8ba219ced04ee470310b7151'; // Chave de API do TMDb gera por mim, no meu user
       const apiUrl = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchTerm}`;
 
       this.http.get(apiUrl).subscribe((data: any) => {
         this.movies = data.results; // Armazene os resultados da pesquisa
       });
     }
+  }
+
+  clearSearch() {
+    this.searchForm.reset(); // Limpar o campo de pesquisa
+    this.movies = []; // Limpar os resultados da pesquisa
   }
 }
