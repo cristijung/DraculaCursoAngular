@@ -35,10 +35,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .conteudo {
   max-width: 96%;
-  height: 100vh;
+  height: 80vh;
   margin: auto;
   padding: 1%;
   margin-top: 15px;
+  margin-bottom: 15px;
   border-radius: 5px;
   background-color: var(--corpo-conteudo);
   color: var(--texto-conteudo);

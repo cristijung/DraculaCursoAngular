@@ -1,10 +1,12 @@
 # Aplicação Drácula
 ## Curso Angular
 
-- App feito em Angular
+- Aplicação feito em Angular
 - Material Angular: `https://material.angular.io/`
 - Bootstrap: `https://getbootstrap.com/`
 - API: `https://api.themoviedb.org`
+- FontsAwsome: `https://fontawesome.com/` -- Instalação: `npm install --save @fortawesome/fontawesome-free`
+
 
 ___________________________________________________
 ## Conteúdo Programático 
