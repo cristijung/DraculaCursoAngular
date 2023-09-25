@@ -15,7 +15,7 @@ export class AssistirComponent implements OnInit {
 
   ngOnInit(): void {
     this.searchForm = this.formBuilder.group({
-      searchTerm: [''], // Inicialize com um valor vazio
+      searchTerm: [''],
     });
   }
 
@@ -32,7 +32,7 @@ export class AssistirComponent implements OnInit {
   }
 
   clearSearch() {
-    this.searchForm.reset(); // Limpar o campo de pesquisa
-    this.movies = []; // Limpar os resultados da pesquisa
+    this.searchForm.reset();
+    this.movies = [];
   }
 }
