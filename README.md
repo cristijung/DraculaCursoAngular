@@ -8,9 +8,9 @@
 - FontsAwsome: `https://fontawesome.com/` -- Instalação: `npm install --save font-awesome`
 
 #### No arquivo `angular.json` 
-- `"styles": [ <br/>
-  "src/styles.css", <br/>
-  "node_modules/font-awesome/css/font-awesome.css" <br/>
+- `"styles": [ 
+  "src/styles.css", 
+  "node_modules/font-awesome/css/font-awesome.css" 
 ],`
 
 ___________________________________________________
