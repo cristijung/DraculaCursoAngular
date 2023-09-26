@@ -14,7 +14,7 @@
 ],`
 
 ___________________________________________________
-## Conteúdo Programático 
+## Conteúdo Programático. 
 ### Aula 01
 - Introdução e história do Angular
 - Evolução e versões
