@@ -22,8 +22,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShareMenuComponent } from './components/share-menu/share-menu.component';
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +37,6 @@ import { ShareMenuComponent } from './components/share-menu/share-menu.component
     NotfoundComponent,
     ShareMenuComponent,
 
-
   ],
   imports: [
     BrowserModule,
@@ -51,6 +48,7 @@ import { ShareMenuComponent } from './components/share-menu/share-menu.component
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+
 
 
   ],
