@@ -5,3 +5,20 @@
   text-align: center;
   padding-top: 1.5%;
 }
+
+.content-icons {
+  width: 30px;
+}
+
+a {
+  color: var(--texto-link);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--texto-hover-link);
+}
+
+a:active {
+  color: var(--texto-hover-link);
+}
