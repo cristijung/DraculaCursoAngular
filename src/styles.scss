@@ -9,12 +9,12 @@
   --titulo-header: #FFF5EE;
   --stitulo-header: #d3989d;
   --color-border: #130101;
-  --corpo-conteudo: #fae2e4;
-  --texto-conteudo: #2c0202;
+  --corpo-conteudo: #0D0D0D;
+  --texto-conteudo: #FFF5EE;
   --barra-rolar: #6b0f08;
   --barra-rolar-claro: #a30606;
   --texto-link: #fff;
-  --texto-hover-link: #fff5ee; 
+  --texto-hover-link: #fff5ee;
 }
 
 html, body { height: 100%; }
@@ -37,7 +37,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .conteudo {
   max-width: 96%;
-  height: 80vh;
+  height: 150vh;
   margin: auto;
   padding: 1%;
   margin-top: 15px;
