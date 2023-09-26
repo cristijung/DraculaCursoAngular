@@ -19,6 +19,7 @@ import { ContatoComponent } from './pages/contato/contato.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ShareMenuComponent } from './components/share-menu/share-menu.component';
 
 
 
@@ -36,6 +37,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AssistirComponent,
     ContatoComponent,
     NotfoundComponent,
+    ShareMenuComponent,
 
 
   ],

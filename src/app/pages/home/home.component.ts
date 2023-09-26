@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   alt = 'Drácula';
   image = '../../../assets/drc2.png';
 
-  dados: any;
+  dados: any;  //está any para poder receber outros tipos de dados no json
   constructor(private dataService: DataService) {}
 
   //aqui explicar a diretiva ngOnInit
