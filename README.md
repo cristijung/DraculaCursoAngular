@@ -5,8 +5,13 @@
 - Material Angular: `https://material.angular.io/`
 - Bootstrap: `https://getbootstrap.com/`
 - API: `https://api.themoviedb.org`
-- FontsAwsome: `https://fontawesome.com/` -- Instalação: `npm install --save @fortawesome/fontawesome-free`
+- FontsAwsome: `https://fontawesome.com/` -- Instalação: `npm install --save font-awesome`
 
+#### No arquivo `angular.json` 
+- `"styles": [ <br/>
+  "src/styles.css", <br/>
+  "node_modules/font-awesome/css/font-awesome.css" <br/>
+],`
 
 ___________________________________________________
 ## Conteúdo Programático 
