@@ -1,4 +1,15 @@
 .share-menu {
-  width: 80%;
+  width: 60%;
   margin: auto;
+  padding: 1%;
+  background-color: var(--corpo-conteudo);
+}
+
+.menu a {
+  color: var( --texto-link);
+}
+
+.menu a:hover
+{
+  color: var(--texto-hover-link);
 }
