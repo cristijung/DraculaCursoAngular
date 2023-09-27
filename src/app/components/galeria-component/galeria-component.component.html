@@ -1,1 +1,11 @@
-<p>galeria-component works!</p>
+<section class="content">
+  <div class="gallery">
+    <h2>{{ title }}</h2>
+    <span>{{ stitle }}</span>
+    <div>{{ texto.figurino }}</div>
+    <div *ngFor="let image of images" class="image">
+      <img [src]="image.url" [alt]="image.caption" />
+      <p>{{ image.caption }}</p>
+    </div>
+  </div>
+</section>
