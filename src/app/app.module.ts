@@ -20,6 +20,7 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShareMenuComponent } from './components/share-menu/share-menu.component';
+import { GaleriaComponentComponent } from './components/galeria-component/galeria-component.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { ShareMenuComponent } from './components/share-menu/share-menu.component
     ContatoComponent,
     NotfoundComponent,
     ShareMenuComponent,
+    GaleriaComponentComponent,
 
   ],
   imports: [
