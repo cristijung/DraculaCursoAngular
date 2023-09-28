@@ -2,18 +2,11 @@
   <span class="titulo">{{ title }}</span>
   <hr />
   <div>
-    <!-- Input para inserir o URL da imagem -->
-    <input
-      [(ngModel)]="imageUrl"
-      placeholder="Insira o URL da imagem"
-      (input)="onImageUrlChange()"
-      class="form-control"
-    />
+    <!-- Input para inserir o nome do personagem -->
+    <input [(ngModel)]="nomePersonagem" placeholder="Nome do personagem">
 
-    <!-- Botão para alternar a exibição da imagem -->
-    <button (click)="toggleImage()" class="btn btn-danger">Toggle Image</button>
-
-    <!-- Usando ngIf para exibir a imagem se shouldDisplay for true -->
-    <img *ngIf="shouldDisplay" [src]="imageUrl" alt="Imagem" width="300" />
+    <!-- Usando ngIf para exibir a imagem se o nome do personagem for válido -->
+    <img *ngIf="getImagemUrl()" [src]="getImagemUrl()" alt="Imagem do personagem" width="300">
   </div>
+
 </section>
