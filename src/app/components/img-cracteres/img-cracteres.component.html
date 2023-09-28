@@ -1,9 +1,25 @@
 <section class="content">
   <span class="titulo">{{ title }}</span>
   <hr />
+    <h3> {{ dados.nomeDracula }}</h3>
+    <p>{{ dados.descricaoDracula }}</p>
+    <h3> {{ dados.nomeMina }}</h3>
+    <p>{{ dados.descricaoMina }}</p>
+    <h3> {{ dados.nomeJonathan }}</h3>
+    <p>{{ dados.descricaoJonathan }}</p>
+    <h3> {{ dados.nomeLucy }}</h3>
+    <p>{{ dados.descricaoLucy }}</p>
+    <h3> {{ dados.nomeArthur }}</h3>
+    <p>{{ dados.descricaoArthur }}</p>
+    <h3> {{ dados.nomeCary }}</h3>
+    <p>{{ dados.descricaoCary }}</p>
+  <hr/>
   <div>
     <!-- Input para inserir o nome do personagem -->
-    <input [(ngModel)]="nomePersonagem" placeholder="Nome do personagem">
+    <select [(ngModel)]="selectedPersonagem">
+      <option value="">Selecione um personagem</option>
+      <option *ngFor="let personagem of personagens" [value]="personagem.nome">{{ personagem.nome }}</option>
+    </select>
 
     <!-- Usando ngIf para exibir a imagem se o nome do personagem for válido -->
     <img *ngIf="getImagemUrl()" [src]="getImagemUrl()" alt="Imagem do personagem" width="300">

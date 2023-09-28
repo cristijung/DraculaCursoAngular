@@ -26,7 +26,7 @@ export const personagensData = [
     imagemUrl: '../../../assets/personagens/arthur.png',
   },
   {
-    nome: 'Cary',
+    nome: 'John Seward',
     imagemUrl: '../../../assets/personagens/cary.png',
   },
 
