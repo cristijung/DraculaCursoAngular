@@ -1,28 +1,48 @@
 <section class="content">
   <span class="titulo">{{ title }}</span>
+  <div class="texto">{{ dados.descricaoPersonagens }}</div>
   <hr />
-    <h3> {{ dados.nomeDracula }}</h3>
-    <p>{{ dados.descricaoDracula }}</p>
-    <h3> {{ dados.nomeMina }}</h3>
-    <p>{{ dados.descricaoMina }}</p>
-    <h3> {{ dados.nomeJonathan }}</h3>
-    <p>{{ dados.descricaoJonathan }}</p>
-    <h3> {{ dados.nomeLucy }}</h3>
-    <p>{{ dados.descricaoLucy }}</p>
-    <h3> {{ dados.nomeArthur }}</h3>
-    <p>{{ dados.descricaoArthur }}</p>
-    <h3> {{ dados.nomeCary }}</h3>
-    <p>{{ dados.descricaoCary }}</p>
-  <hr/>
-  <div>
-    <!-- Input para inserir o nome do personagem -->
-    <select [(ngModel)]="selectedPersonagem">
-      <option value="">Selecione um personagem</option>
-      <option *ngFor="let personagem of personagens" [value]="personagem.nome">{{ personagem.nome }}</option>
-    </select>
+  <div class="envelope">
+    <div class="coluna">
+      <span class="titulo"> {{ dados.nomeDracula }}</span>
+      <p>{{ dados.descricaoDracula }}</p>
+      <span class="titulo"> {{ dados.nomeMina }}</span>
+      <p>{{ dados.descricaoMina }}</p>
+      <span class="titulo"> {{ dados.nomeJonathan }}</span>
+      <p>{{ dados.descricaoJonathan }}</p>
+      <span class="titulo"> {{ dados.nomeLucy }}</span>
+      <p>{{ dados.descricaoLucy }}</p>
+      <span class="titulo"> {{ dados.nomeArthur }}</span>
+      <p>{{ dados.descricaoArthur }}</p>
+      <span class="titulo"> {{ dados.nomeCary }}</span>
+      <p>{{ dados.descricaoCary }}</p>
+    </div>
 
-    <!-- Usando ngIf para exibir a imagem se o nome do personagem for válido -->
-    <img *ngIf="getImagemUrl()" [src]="getImagemUrl()" alt="Imagem do personagem" width="300">
+    <div class="coluna">
+      <h3>{{ titled }}</h3>
+      <!-- select para selecionar o nome do personagem -->
+      <div class="envelope-img">
+        <div class="linha">
+          <select [(ngModel)]="selectedPersonagem" class="form-control">
+            <option value="">Selecione um personagem</option>
+            <option
+              *ngFor="let personagem of personagens"
+              [value]="personagem.nome"
+            >
+              {{ personagem.nome }}
+            </option>
+          </select>
+        </div>
+        <div class="linha">
+          <!-- Usando ngIf para exibir a imagem se o nome do personagem for válido -->
+          <img
+            *ngIf="getImagemUrl()"
+            [src]="getImagemUrl()"
+            alt="Imagem do personagem"
+            width="300"
+          />
+        </div>
+      </div>
+    </div>
   </div>
-
 </section>

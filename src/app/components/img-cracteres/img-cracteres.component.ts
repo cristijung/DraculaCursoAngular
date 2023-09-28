@@ -10,6 +10,7 @@ import { DataService } from 'src/app/services/data.service';
 
 export class ImgCracteresComponent {
   title = 'Principais personagens';
+  titled = 'Selecione um personagem para ver a sua imagem';
   dados: any;
   personagens = personagensData;
   selectedPersonagem: string = '';
@@ -23,7 +24,7 @@ export class ImgCracteresComponent {
 
   //esta opção é para trabalhar com two-way data binding
   getImagemUrl(): string {
-    const personagem = this.personagens.find(p => p.nome === this.selectedPersonagem);
+    const personagem = this.personagens.find(foto => foto.nome === this.selectedPersonagem);
     return personagem ? personagem.imagemUrl : '';
   }
 }

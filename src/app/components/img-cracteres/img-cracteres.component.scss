@@ -9,3 +9,39 @@
   color: var(--texto-conteudo);
   box-shadow: 2px 2px 2px 2px rgba(10, 0, 0, 0.2);
 }
+
+.titulo {
+  color: var(--texto-conteudo);
+  font-size: 22px;
+  &:hover {
+    color: var( --texto-principal-hover);
+  }
+  margin-bottom: 20px;
+}
+
+.envelope {
+  display: flex;
+}
+
+.coluna {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--border-galeria);
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.envelope-img {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: auto;
+
+}
+
