@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+/* Esquema de cores */
 
 :root {
   --fundo-body: #000;
@@ -61,4 +61,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .texto {
   font-weight: 200;
   font-size: 18px;
+  text-align: left;
+  padding-top: 10px;
 }
