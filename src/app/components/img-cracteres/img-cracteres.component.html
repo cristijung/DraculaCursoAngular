@@ -23,8 +23,9 @@
       <!-- select para selecionar o nome do personagem -->
       <div class="envelope-img">
         <div class="linha">
+          <!--two-way db-->
           <select [(ngModel)]="selectedPersonagem" class="form-control">
-            <option value="">Selecione um personagem</option>
+            <option value="">Clique para selecionar um personagem</option>
             <option
               *ngFor="let personagem of personagens"
               [value]="personagem.nome"
