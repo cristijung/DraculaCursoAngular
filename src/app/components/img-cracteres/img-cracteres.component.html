@@ -1,0 +1,19 @@
+<section class="content">
+  <span class="titulo">{{ title }}</span>
+  <hr />
+  <div>
+    <!-- Input para inserir o URL da imagem -->
+    <input
+      [(ngModel)]="imageUrl"
+      placeholder="Insira o URL da imagem"
+      (input)="onImageUrlChange()"
+      class="form-control"
+    />
+
+    <!-- Botão para alternar a exibição da imagem -->
+    <button (click)="toggleImage()" class="btn btn-danger">Toggle Image</button>
+
+    <!-- Usando ngIf para exibir a imagem se shouldDisplay for true -->
+    <img *ngIf="shouldDisplay" [src]="imageUrl" alt="Imagem" width="300" />
+  </div>
+</section>

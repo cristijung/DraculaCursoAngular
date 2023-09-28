@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShareMenuComponent } from './components/share-menu/share-menu.component';
 import { GaleriaComponentComponent } from './components/galeria-component/galeria-component.component';
+import { ImgCracteresComponent } from './components/img-cracteres/img-cracteres.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { GaleriaComponentComponent } from './components/galeria-component/galeri
     NotfoundComponent,
     ShareMenuComponent,
     GaleriaComponentComponent,
+    ImgCracteresComponent,
 
   ],
   imports: [
