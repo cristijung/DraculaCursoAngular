@@ -2,9 +2,10 @@
   <div class="conteudos containeer">
 <div class="titulo">{{ title }}</div>
 <p class="texto">{{ texto }}</p>
-<div>
+<div class="formulario">
   <input [(ngModel)]="searchTerm" (keyup.enter)="search()" class="formulario form-control">
-  <button (click)="search()" class="btn btn-danger">Buscar</button>
+  <button (click)="search()" class="btn btn-danger" style="margin-left: 5px;">Buscar</button>
+</div>
   <ul>
     <li *ngFor="let movie of movies"  class="gallery">
       <img [src]="getMoviePosterUrl(movie.poster_path)" alt="{{ movie.title }} Poster" />
@@ -13,6 +14,6 @@
 
     </li>
   </ul>
-</div>
+
 </div>
 </section>

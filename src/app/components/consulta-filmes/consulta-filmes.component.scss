@@ -1,8 +1,16 @@
 .formulario {
-  width: 50%;
+  width: 60%;
   margin: auto;
+  display: flex;
+  align-items: center;
 }
 
+input {
+  flex: 1;
+  padding: 10px;
+}
+
+//deixar por enquanto até decidir se vou usar
 .barra {
   scrollbar-width: thin;
   scrollbar-color: var(--barra-rolar) transparent;
