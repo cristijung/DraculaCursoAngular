@@ -5,6 +5,9 @@
 <div class="formulario">
   <input [(ngModel)]="searchTerm" (keyup.enter)="search()" class="formulario form-control">
   <button (click)="search()" class="btn btn-danger" style="margin-left: 5px;">Buscar</button>
+  <button type="submit" class="btn btn-danger" (click)="clearSearch()" style="margin-left: 5px;">
+    Limpar pesquisa
+  </button>
 </div>
   <ul>
     <li *ngFor="let movie of movies"  class="gallery">

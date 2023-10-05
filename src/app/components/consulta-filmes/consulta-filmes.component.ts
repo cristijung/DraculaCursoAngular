@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { MovieService } from 'src/app/services/movie.services';
 
 @Component({
@@ -7,6 +8,7 @@ import { MovieService } from 'src/app/services/movie.services';
   styleUrls: ['./consulta-filmes.component.scss'],
 })
 export class ConsultaFilmesComponent {
+
   defaultImg = '../../../assets/dracula.png';
   searchTerm = '';
   movies: any[] = [];
@@ -23,11 +25,17 @@ export class ConsultaFilmesComponent {
 
   getMoviePosterUrl(posterPath: string | null) {
     if (!posterPath) {
-      return 'defaulImg'; // Substitua pela URL de uma imagem padrão
+      return 'defaulImg';
     }
 
     return `https://image.tmdb.org/t/p/w500/${posterPath}`;
   }
+
+  clearSearch() {
+    this.searchTerm = ''; // Limpa o termo de pesquisa
+    this.movies = [];    // Limpa a lista de filmes
+  }
+
 
   title = 'Buscar Poster de Filme';
   texto =
