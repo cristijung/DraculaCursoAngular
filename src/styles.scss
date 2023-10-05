@@ -17,6 +17,7 @@
   --texto-link: #fff;
   --texto-hover-link: #fff5ee;
   --border-galeria: #363636;
+  --hover-texto: #ccc;
 }
 
 html, body { height: 100%; }
@@ -64,3 +65,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   text-align: left;
   padding-top: 10px;
 }
+
+//muda a cor do enevoar dos campos de texto do form-control
+.form-control:focus {
+  border-color: var(--border-galeria);
+  box-shadow: 1px 1px 5px 0.25rem var(--barra-rolar);
+}
+

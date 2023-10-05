@@ -24,7 +24,8 @@ export class ImgCracteresComponent {
 
   //esta opção é para trabalhar com two-way data binding
   getImagemUrl(): string {
-    const personagem = this.personagens.find(foto => foto.nome === this.selectedPersonagem);
+    const personagem =
+    this.personagens.find(foto => foto.nome === this.selectedPersonagem);
     return personagem ? personagem.imagemUrl : '';
   }
 }
