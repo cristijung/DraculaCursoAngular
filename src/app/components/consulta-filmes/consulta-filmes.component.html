@@ -1,10 +1,18 @@
 <section class="container-app">
-  <input [(ngModel)]="searchTerm" (keyup.enter)="search()">
-  <button (click)="search()">Search</button>
+  <div class="conteudos containeer">
+<div class="titulo">{{ title }}</div>
+<p class="texto">{{ texto }}</p>
+<div>
+  <input [(ngModel)]="searchTerm" (keyup.enter)="search()" class="formulario form-control">
+  <button (click)="search()" class="btn btn-danger">Buscar</button>
   <ul>
-    <li *ngFor="let movie of movies">
-      {{ movie.title }}
-      <img [src]="getMoviePosterUrl(movie.poster_path)" alt="{{ movie.title }} Poster">
+    <li *ngFor="let movie of movies"  class="gallery">
+      <img [src]="getMoviePosterUrl(movie.poster_path)" alt="{{ movie.title }} Poster" />
+      <hr/>
+     <p>{{ movie.title }}</p>
+
     </li>
   </ul>
+</div>
+</div>
 </section>

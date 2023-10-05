@@ -21,6 +21,8 @@
   "descricaoLucy": "Lucy Westenra é a melhor amiga de Mina Murray. Ela é uma jovem bela e rica, que se torna uma vítima de Drácula. Lucy é transformada em uma vampira, e seus amigos são forçados a matá-la para que ela não continue a causar danos.",
   "descricaoHelsing": "Abraham Van Helsing é um professor holandês que é especialista em vampiros. Ele é contratado por Jonathan Harker para ajudar a derrotar Drácula. Van Helsing é um homem sábio e experiente, que é capaz de usar seus conhecimentos para lutar contra os vampiros.",
   "descricaoArthur": "Lorde Arthur Holmwood, o noivo de Lucy Westenra",
-  "descricaoCary": "Dr. John Seward, um médico que é o responsável pelo tratamento de R. M. Renfield."
+  "descricaoCary": "Dr. John Seward, um médico que é o responsável pelo tratamento de R. M. Renfield.",
+  "tituloFilmes": "Buscar Poster de Filmes",
+  "textoFilme": "Nesta página você poderá pesquisar o filme por nome, retornar o nome e a imagem do poster do filme. Neste componente estamos consumindo a API do TMDb passando parâmetros nas requisições HTTP - HttpParams. Digite o nome que deseja pesquisar e a solicitação irá retornar o poster e o nome do filme. Enjoy!"
 
 }

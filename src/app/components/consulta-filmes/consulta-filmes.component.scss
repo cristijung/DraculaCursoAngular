@@ -1,0 +1,49 @@
+.formulario {
+  width: 50%;
+  margin: auto;
+}
+
+.barra {
+  scrollbar-width: thin;
+  scrollbar-color: var(--barra-rolar) transparent;
+  height: 200px;
+  overflow: scroll;
+  margin-right: 16px;
+}
+
+div::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: var(--barra-rolar); /* Cor do tipo ... hover */
+  border-radius: 4px;
+}
+
+div:hover::-webkit-scrollbar-thumb {
+  background-color: var(--barra-rolar-claro); /* Cor quando está ativa */
+}
+
+.conteudos {
+  max-width: 96%;
+  margin: auto;
+  padding: 1%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: var(--corpo-conteudo);
+  color: var(--texto-conteudo);
+  box-shadow: 2px 2px 2px 2px rgba(10, 0, 0, 0.2);
+}
+
+.gallery {
+  border: var(--border-galeria) solid 1px;
+  border-radius: 4px;
+  padding: 1%;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  list-style: none;
+}

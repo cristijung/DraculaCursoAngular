@@ -5,8 +5,9 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
+
 export class MovieService {
-  private apiKey = '3dacd77a8ba219ced04ee470310b7151'; // Substitua com sua chave de API do TMDb
+  private apiKey = '3dacd77a8ba219ced04ee470310b7151'; //minha chave -- é preciso gerar
 
   constructor(private http: HttpClient) {}
 

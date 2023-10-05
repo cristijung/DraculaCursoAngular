@@ -4,9 +4,10 @@ import { MovieService } from 'src/app/services/movie.services';
 @Component({
   selector: 'app-consulta-filmes',
   templateUrl: './consulta-filmes.component.html',
-  styleUrls: ['./consulta-filmes.component.scss']
+  styleUrls: ['./consulta-filmes.component.scss'],
 })
 export class ConsultaFilmesComponent {
+  defaultImg = '../../../assets/dracula.png';
   searchTerm = '';
   movies: any[] = [];
 
@@ -14,18 +15,21 @@ export class ConsultaFilmesComponent {
 
   search() {
     if (this.searchTerm) {
-      this.movieService.searchMovies(this.searchTerm)
-        .subscribe((data: any) => {
-          this.movies = data.results;
-        });
+      this.movieService.searchMovies(this.searchTerm).subscribe((data: any) => {
+        this.movies = data.results;
+      });
     }
   }
 
   getMoviePosterUrl(posterPath: string | null) {
     if (!posterPath) {
-      return 'URL_DA_IMAGEM_PADRÃO'; // Substitua pela URL de uma imagem padrão
+      return 'defaulImg'; // Substitua pela URL de uma imagem padrão
     }
 
     return `https://image.tmdb.org/t/p/w500/${posterPath}`;
   }
+
+  title = 'Buscar Poster de Filme';
+  texto =
+    'Nesta página você poderá pesquisar o filme por nome, retornar o nome e a imagem do poster do filme. Neste componente estamos consumindo a API do TMDb passando parâmetros nas requisições HTTP - HttpParams. Digite o nome que deseja pesquisar e a solicitação irá retornar o poster e o nome do filme. Enjoy!';
 }
