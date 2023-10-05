@@ -28,7 +28,7 @@ export class ContatoComponent {
 
   customNameValidator(control: FormControl) {
     const name = control.value;
-    const pattern = /^[a-zA-Z\s]{3,}$/; // Apenas letras e mínimo de 3 caracteres
+    const pattern = /^[a-zA-Z\s]{3,}$/; // Só letras e mínimo de 3 caracteres
     if (!pattern.test(name)) {
       return { invalidName: true };
     }
