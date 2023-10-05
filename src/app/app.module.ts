@@ -22,6 +22,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShareMenuComponent } from './components/share-menu/share-menu.component';
 import { GaleriaComponentComponent } from './components/galeria-component/galeria-component.component';
 import { ImgCracteresComponent } from './components/img-cracteres/img-cracteres.component';
+import { ConsultaFilmesComponent } from './components/consulta-filmes/consulta-filmes.component';
+import { FilmesComponent } from './pages/filmes/filmes.component';
 
 
 @NgModule({
@@ -40,6 +42,8 @@ import { ImgCracteresComponent } from './components/img-cracteres/img-cracteres.
     ShareMenuComponent,
     GaleriaComponentComponent,
     ImgCracteresComponent,
+    ConsultaFilmesComponent,
+    FilmesComponent,
 
   ],
   imports: [

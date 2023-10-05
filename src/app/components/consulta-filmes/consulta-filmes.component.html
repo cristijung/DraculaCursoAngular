@@ -1,0 +1,10 @@
+<section class="container-app">
+  <input [(ngModel)]="searchTerm" (keyup.enter)="search()">
+  <button (click)="search()">Search</button>
+  <ul>
+    <li *ngFor="let movie of movies">
+      {{ movie.title }}
+      <img [src]="getMoviePosterUrl(movie.poster_path)" alt="{{ movie.title }} Poster">
+    </li>
+  </ul>
+</section>

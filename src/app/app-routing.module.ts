@@ -8,6 +8,7 @@ import { GaleriaComponent } from './pages/galeria/galeria.component';
 import { VersoesComponent } from './pages/versoes/versoes.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { ContatoComponent } from './pages/contato/contato.component';
+import { FilmesComponent } from './pages/filmes/filmes.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'galeria', component: GaleriaComponent },
   { path: 'versoes', component: VersoesComponent },
   { path: 'contato', component: ContatoComponent },
+  { path: 'filmes', component: FilmesComponent },
   { path: '**', component: NotfoundComponent }
 ];
 
